@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title><?=\Raptor\Config::game_title;?></title>
+    <link href="/storage/predef/bootstrap.css" rel="stylesheet">
+    <link href="/storage/predef/font-awesome.min.css" rel="stylesheet">
+	<script>
+	    <?=($error === true) ? "alert('Неверный логин или пароль');" : ''?>
+		<?=(isset($_GET['ok']) ? "alert('Вы успешно зарегистрировались');" : '');?>
+	</script>
+
+</head>
+
+<body>
+
+          <div>
+            <form action='/auth/register' method='POST'>
+				<input type='text' value='' name='login' placeholder='Логин'>
+				<input type='password' value='' name='password' placeholder='Пароль'>
+				<input type='submit' value='Регистрация'>
+			</form>
+          </div>
+
+	<script src="/storage/predef/jquery.js"></script>
+    <script src="/storage/predef/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/storage/predef/mainpage.js"></script>
+	<script type="text/javascript" src="http://vk.com/js/api/share.js?90" charset="windows-1251"></script>
+	<script type="text/javascript" src="http://vk.com/js/api/openapi.js?115"></script>
+</body>
+</html>
