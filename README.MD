@@ -1,3 +1,3 @@
-# h3 Модуль Registration для Raptor Game Engine 1.*
+# Модуль Registration для Raptor Game Engine 1.*
 
 Данный модуль дает возможность вынести регистрацию на отдельную страницу ***'/registration'***, для установки модуля закиньте содержимое в папку **engine**.
